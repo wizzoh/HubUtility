@@ -1,0 +1,21 @@
+name: Hubutility
+version: '${project.version}'
+main: me.wizzo.hubutility.Hubutility
+authors: [ wizzo ]
+description: Utility plugin
+
+commands:
+  spawn:
+    description: tippati allo spawn
+  setspawn:
+    description: setta lo spawn della lobby
+  staff:
+    description: tippati alla staffroom
+  setstaff:
+    description: setta lo spawn della staffroom
+  parkour:
+    description: tippati al parkour
+  setparkour:
+    description: setta lo spawn del parkour
+  stacker:
+    description: abilita/disabilita lo stacker

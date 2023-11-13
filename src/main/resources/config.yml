@@ -1,0 +1,126 @@
+# Config for HubUtility plugin
+# Created by Wizzo <3 (founder of GummyMC)
+
+
+#       COMMANDS
+
+#       Generali
+Prefix: "&e[&dHub&e]"
+OnlyPlayer: "{prefix} &cSolo i player possono utilizzare questo comando!"
+
+#       Spawn
+Spawn:
+  SpawnTP:
+    Success: "{prefix} &eTi sei teleportato allo Spawn!"
+  SetSpawn:
+    Usage: "{prefix} &cUtilizza /setspawn"
+    Success: "{prefix} &eSpawn settato correttamente in questa posizione."
+
+#       StaffRoom
+StaffRoom:
+  Enable: true
+  StaffTP:
+    Success: "{prefix} &eTi sei teleportato alla Staff room!"
+  SetSpawn:
+    Usage: "{prefix} &cUtilizza /setstaff"
+    Success: "{prefix} &eStaffRoom settata correttamente in questa posizione."
+
+#       Parkour
+Parkour:
+  Enable: true
+  Slot: 1
+  Name: "&bParkour &7(click destro)"
+  Lore:
+    - ""
+    - "§7Clicca con il destro per"
+    - "§7iniziare il parkour"
+    - ""
+  Command: "parkour"
+  ParkourTP:
+    Success: "{prefix} &eTi sei teleportato al Parkour!"
+  SetSpawn:
+    Usage: "{prefix} &cUtilizza /setparkour"
+    Success: "{prefix} &eInizio parkour settato correttamente in questa posizione."
+
+#       Compass
+Compass:
+  Slot: 0
+  Name: "&bModalità &7(click destro)"
+  Lore:
+    - ""
+    - "§7Apri il menù per vedere tutte"
+    - "§7le modalità che il nostro"
+    - "§7network ha da offrirti."
+    - "§7Ti auguriamo un buon game!"
+    - ""
+  Command: "dm open menù"
+
+#       HidePlayer
+HidePlayer:
+  Slot: 8
+  Name:
+    Enable: "&7Player: &cnascosti"
+    Disable: "&7Player: &avisibili"
+  Message:
+    Enable: "{prefix} &7I player sono ora &cnascosti&7."
+    Disable: "{prefix} &7I player sono ora &avisibili&7."
+  Lore:
+    - ""
+    - "§7Ti infastidisce la visione"
+    - "§7dei player? Beh, con questo"
+    - "§7avrai la possibilità di nasconderli."
+    - ""
+
+#       Minigames
+Workbench:
+  Slot: 7
+  Name: "&bMinigames &7(Click destro)"
+  Lore:
+    - ""
+    - "§7Qui troverai moltissimi minigames"
+    - "§7con cui poter giocare in hub da solo"
+    - "§7e/o in compagnia."
+    - ""
+  Command: "miniboard play"
+
+#       PvP Sword
+PvP:
+  Prefix: "&8[&3PvP&8]"
+  Message:
+    Enable: "{PvpPrefix} &7PvP &aattivato&7!"
+    Disable: "{PvpPrefix} &7PvP &cdisattivato&7!"
+    Death: "{PvpPrefix} &e{victim} &7è stato ucciso da &a{killer}"
+    CmdBlocked: "{PvpPrefix} &cNon puoi utilizzare questo comando in pvp!"
+    Cooldown: "{PvpPrefix} &cAttendi il countdown prima di riattivare il pvp!"
+  Sword:
+    Slot: 4
+    SharpLvl: 2
+    Name: "&bPvP &7(Shift + Click destro)"
+    Lore:
+      - ""
+      - "§7Vuoi passare il tempo? "
+      - "§7Shift + Click destro per "
+      - "§7attivare il §dPvP §7e fai "
+      - "§7lo stesso per disattivarlo! "
+      - ""
+  Helmet:
+    Name: "&bElmetto"
+  Chestplate:
+    Name: "&bPettorina"
+  Leggings:
+    Name: "&bGambali"
+  Boots:
+    Name: "&bStivali"
+  CmdBlocked:
+    - /fly
+    - /vanish
+    - /v
+    - /spawn
+    - /parkour
+    - /staff
+Stacker:
+  Enable: "{prefix} &7Stacker &aattivato"
+  Disable: "{prefix} &7Stacker &cdisattivato"
+  SelfNotEnable: "{prefix} &7Devi attivare lo stacker! (/stacker)"
+  TargetNotEnable: "{prefix} &7Il player non ha lo stacker attivo"
+  AllNotEnable: "{prefix} &7Dovete avere entrambi lo stacker attivo"
